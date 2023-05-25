@@ -1,3 +1,15 @@
 # Machine Learning
 
-## Version 1.0 has been uploaded successfully
+## Process
+
+- [x] Data Understanding
+- [x] Data Preparation
+- [x] Modeling
+  - [x] Random Forest and Evaluation 
+  - [x] Neural Network and Evaluation
+  - [x] Adaboost and Evaluation
+  - [ ] Decision Trees
+  - [ ] Naive Bayes
+  - [ ] K-means
+  - [ ] Association Rules
+  - [ ] Linear Regression
