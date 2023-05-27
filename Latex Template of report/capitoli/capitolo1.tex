@@ -13,13 +13,14 @@ Kaggle is an online community of data scientists and machine learning profession
 
 \subsection{Business Objectives}
 %(Describe primary objective from a business perspective) 
-The goal is to understand which parameters contribute to the market value of a house, which of them allow to increase the economic value more and which less.
+The goal is to understand which parameters contribute to the market value of a house, which of them allow to increase the economic value more and which less. Formally we have to answer the following question:
+\begin{itemize}
+    \item What attributes are positively and negatively related to home price value?
+\end{itemize}
 
 \subsection{Business success criteria}
 %(Describe the criteria that you’ll see to determine if the project has been successful)
 The criterion we use are the relationships that we find between the various attributes that lead to substantial changes in the market value of the house in question.
-
-
 
 \section{Assess Situation}
 This task involves the resources, requirements, constraints, assumptions, risks, contingencies, glossary of terminology, and the cost-benefit analysis.
@@ -30,7 +31,32 @@ List of resources available to the project:
 \item Personnel: five students of machine learning; 
 \item Data: fixed extracts;
 \item Computing resources: laptops;
-\item Software: Jupyther v.6.4.12. OTHER????
+\item Software:
+   \begin{itemize}
+       \item Programming Language
+             \begin{itemize}
+                 \item Python: is an interpreted, high-level language with 
+dynamic semantics 
+             \end{itemize}
+        \item Modules (packages)
+             \begin{itemize}
+                 \item NumPy: is the fundamental package for scientific computing
+                 \item Scipy library: provides user-friendly and efficient numerical routines
+such as routines for numerical integration and optimization
+                 \item Pandas: is a set of structures and data analysis tools
+                 \item Scikit-Learn library: is a repository rich of simple and efficient
+tools for data mining and data analysis
+                 \item Matplotlib: is a plotting library which produces publication
+quality figures in a variety of hardcopy formats and interactive
+environments across platforms
+             \end{itemize}
+        \item Sharing Server
+             \begin{itemize}
+                 \item Jupyter Notebook: is an open-source web application that allows
+you to create and share documents that contain live code,
+equations, visualization and narrative text
+             \end{itemize}
+   \end{itemize}
 \end{itemize}
 
 \subsection{Requirements, assumptions and constraints}
@@ -39,15 +65,16 @@ We are not sure that these requirements are the only ones that are relevant in e
 
 \subsection{Risks and contingencies}
 \begin{itemize}
-\item List of risks or event that might delay the project or cause it to fail: For timing reasons we don't know if we will be able to compare different modeling techniques, in order to find the technique that best describes our problem; 
+\item List of risks or event that might delay the project or cause it to fail: For timing reasons we don't know if we will be able to compare different modeling techniques, in order to find the technique that best describes our problem; We plan to cover at least five models, but we have the unknown factor of time.
 \item List of actions to be carried out if the risks arises: In case this problem arises, we are satisfied to be able to conclude a correct analysis and estimation of a modeling technique.
 \end{itemize}	
 
 \subsection{Terminology}
 %Glossary of terminology relevant to the project) (LATER)
 \begin{itemize}
-\item Extreme programming: it is one of the most famous agile methodologies. It's an extreme of iterative development, where multiple versions can be built multiple times in a day, increments are delivered to customers every two weeks. Developers work in pairs, checking each other's work, giving support to do a good job; 
-\item Agile methodology: there is a lot of focus on the code and the product to be delivered as opposed to wasting time on other aspects deemed secondary. The principles of this methodology allow you to create software that works quickly.
+    \item Extreme programming: it is one of the most famous agile methodologies. It's an extreme of iterative development, where multiple versions can be built multiple times in a day, increments are delivered to customers every two weeks. Developers work in pairs, checking each other's work, giving support to do a good job; 
+    \item Agile methodology: there is a lot of focus on the code and the product to be delivered as opposed to wasting time on other aspects deemed secondary. The principles of this methodology allow you to create software that works quickly.
+    \item Incremental model: this type of model allows you to develop the software in parts, where each part adds features that are requested by the customer.
 \end{itemize}
 
 \subsection{Costs and benefits}
@@ -67,8 +94,6 @@ The goal is to create a tool capable of estimating new properties that will be p
 %(Define the criteria for a successful outcome) 
 The criterion we use to determine if our project is successful is to find the best valuation model to rank the final price of each house.
 
-
-
 \section{Produce Project Plan}
 Description of the plan envisaged to achieve the data mining objectives and thereby achieve the business objectives.
 
@@ -82,7 +107,7 @@ Description of the plan envisaged to achieve the data mining objectives and ther
     \hrulefill\vspace{15pt}\par
 \end{figure}
 
-The phases that we are going to perform by dividing the work by trying different methodologies in order to create a model as close as possible to the training set provided. Initially we plan to work together to get to know each other better, understand the individual potentials of each of us and to understand and respect the objective of the project. Subsequently, let's assume that we can work according to a methodology defined as Extreme Programming.
+The phases that we are going to perform by dividing the work by trying different methodologies in order to create a model as close as possible to the training set provided. Initially we plan to work together to get to know each other better, understand the individual potentials of each of us and to understand and respect the objective of the project. Subsequently, let's assume that we can work according to the methodology 'Extreme Programming'.
 We plan to spend our time, as is possible see in the figure 1.1, distributing the hours in this way:
 \begin{itemize}
 \item Business Understanding: 5\% of total hours;
@@ -94,3 +119,5 @@ We plan to spend our time, as is possible see in the figure 1.1, distributing th
 
 \subsection{Initial Assessment of Tools and
 Techniques}
+%Select data mining tool that supports various methods for different stages
+The data mining tool that we use to supports various methods for different stages is Scikit-learn library. We used it to supports, supervised, unsupervised learning, model fitting, data preprocessing, model selection, model evaluation, and many other utilities.
