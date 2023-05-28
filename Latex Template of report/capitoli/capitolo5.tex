@@ -33,6 +33,31 @@ To answer the question, showed in figure 5.1, we used a metric called the r2\-sc
 
 The analysis we have conducted shows that all the models we have developed have a good match in terms of accuracy, as visible in figure 5.2, with the test set. We believe we can predict the price of a home based on its features with reasonable accuracy.
 
+\begin{figure}[t]
+\begin{center}
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{imgs/roc_low.png}
+  \captionof{figure}{ROC Curve Low}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{imgs/roc_high.png}
+  \captionof{figure}{ROC Curve High}
+\end{minipage}
+\end{center}
+\end{figure}
+
+\begin{figure}[t]
+    \includegraphics[scale=0.45]{imgs/roc_medium.png}
+    \centering
+    \caption{ROC Curve Medium}
+    \hrulefill\vspace{15pt}\par
+\end{figure}
+
+We compared the performance of the models used using different metrics, such as the ROC curve figure 5.3 to 5.5, which showed a certain score similarity between the Neural Network model and the Random Forest. However, the use of other metrics, such as the confusion matrix, has shed light on the model through accuracy and recall. In conclusion we can say that Random Forest model and Neural Network model are both considered as best machine
+learning model for this work. 
+
 \section{Review Process}
 % Summarize the process review and highlight activities that have been missed and those that should be repeated
 
