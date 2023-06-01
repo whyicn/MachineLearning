@@ -1,1 +1,105 @@
 \chapter{Data Understanding}
+
+\section{Collect Initial Data}
+
+The initial phase of our project entails gaining a comprehensive understanding of the dataset. Which involves a series of activities, beginning with data collection and selection, and extending to the crucial task of achieving balance within the dataset. By undertaking these data understanding activities, we lay the foundation for the subsequent phases of our data mining project. Armed with a comprehensive understanding of the dataset, we are better equipped to proceed with subsequent steps such as data preprocessing, feature engineering, and ultimately, model development.
+
+\subsection{Initial Data Collection Report}
+% List the data sources acquired, the method used to acquire them and any problems encountered (and any resolutions achieved)
+
+To ensure the integrity and quality of our dataset, we have exercised diligence in selecting a trusted source. Our chosen dataset is from the Kaggle platform, renowned for its comprehensive and reliable datasets pertaining to various domains. Specifically, we have exclusively utilized the "train.csv" file, which contains the essential information necessary for our analysis.
+
+\section{Describe Data}
+
+Below we report the "gross" and "surface" properties of the acquired data and report the results.
+
+\subsection{Data Description Report}
+% Describe the data that has been acquired including its format, its quantity
+
+The dataset has the following characteristics: 
+\begin{itemize}
+    \item Multivariate;
+    \item 1460 rows representing the number of records;
+    \item 81 columns representing the number of attributes in the dataset;
+    \item 118,260  total data.
+\end{itemize}
+Out of the 47 attributes, we initially have the following division of data-types: 
+
+\begin{itemize}
+    \item 05 Date time attributes;
+    \item 35 numeric attributes.
+\end{itemize}
+And rest are nominal attributes.
+
+As we mentioned earlier we have 81 attribute and each attribute holds either numerical or categorical information. The following table-2.1 provides a clear idea on all the information and their description.
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{6.6cm}|}
+%\begin{tabular}{|p{3cm}|p{3cm}|p{6.6cm}|}
+\hline
+\textbf{Name} & \textbf{Data Type} & \textbf{Description}                                             \\ \hline
+SalePrice   & int64 & The property's sale price in dollars. This is the target variable \\ \hline
+MSSubClass  & int64     & The building class \\ \hline
+MSZoning    & object    & The general zoning classification \\ \hline
+LotFrontage & object    & Linear feet of street connected to property \\ \hline
+LotArea     & int64     & Lot size in square feet \\ \hline
+Street      & object    & Type of road access \\ \hline
+Alley       & object    & Type of alley access \\ \hline
+LotShape    & object    & General shape of property \\ \hline
+LandContour & object    & Flatness of the property \\ \hline
+Utilities   & object    & Type of utilities available \\ \hline
+LotConfig   & object    & Lot configuration \\ \hline
+LandSlope   & object    & Slope of property \\ \hline
+Neighborhood & object   & Physical locations within Ames city limits \\ \hline
+TotalBsmtSF & int64     & Total square feet of basement area \\ \hline
+BldgType    & object    & Type of dwelling \\ \hline
+HouseStyle  & object    & Style of dwelling \\ \hline
+OverallQual & int64     & Overall material and finish quality \\ \hline
+YearBuilt   & int64     & Original construction date \\ \hline
+RoofMatl    & object    & Roof material \\ \hline
+Bedroom     & int64     & Number of bedrooms above basement level \\ \hline
+Fireplaces  & int64     & Number of fireplaces \\ \hline
+Functional  & object    & Home functionality rating \\ \hline
+GarageType  & object    & Garage location \\ \hline
+GarageArea  & int64     & Size of garage in car capacity \\ \hline
+PavedDrive  & object    & Paved driveway \\ \hline
+MiscVal     & int64     & \$Value of miscellaneous feature \\ \hline
+Fence       & object    & Fence quality \\ \hline
+YrSold      & int64     & Year Sold \\ \hline
+SaleType    & object    & Type of sale \\ \hline
+SaleCondition & object  & Condition of sale \\ \hline
+%\end{tabular}
+\end{longtable}
+
+% \section{Explore Data}
+
+% \subsection{Data Exploration Report}
+% Describe results of data exploration
+% Include graphs and plots to indicate data characteristics
+
+% During this stage you’ll address data mining questions using querying, data visualization and reporting techniques. These may include:
+
+%    Distribution of key attributes (for example, the target attribute of a prediction task)
+%    Relationships between pairs or small numbers of attributes
+%    Results of simple aggregations
+%    Properties of significant sub-populations
+%    Simple statistical analyses
+
+% These analyses may directly address your data mining goals. They may also contribute to or refine the data description and quality reports, and feed into the transformation and other data preparation steps needed for further analysis. 
+
+%    Data exploration report – Describe results of your data exploration, including first findings or initial hypothesis and their impact on the remainder of the project. If appropriate you could include graphs and plots here to indicate data characteristics that suggest further examination of interesting data subsets.
+
+
+\section{Verify Data Quality}
+
+\subsection{Data Quality Report}
+% List the results of the data quality verification
+% If there are any problems, suggest possible soluctions
+
+Analyzing the occurrence of missing values we see that when the value is missing we find a “NaN” or “Na” values. We found values “NA” for columns “LotFrontage”, ”MasVnrArea”, ”GarageYrBlt”. But this attributes carry meaning for columns. Hence, we replaced the “NA” with ‘-1’ or the ‘Mean’ value of the column.  
+With respect to the target class label i.e“SalePrice” attribute, we tried to check whether the dataset is balanced or not. We categorized the values as LOW, MEDIUM and HIGH. From the initial analysis of the data set the target class label was distributed as in the below three different values:
+\begin{itemize}
+    \item MEDIUM: 726 records;
+    \item LOW: 619 records;
+    \item HIGH: 115 records.
+\end{itemize}
+But despite the importance of balance, in this case, the distribution is not perfectly balanced, as the counts of each class vary.
