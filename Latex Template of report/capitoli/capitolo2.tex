@@ -30,7 +30,6 @@ Out of the 47 attributes, we initially have the following division of data-types
     \item 35 numeric attributes.
 \end{itemize}
 And rest are nominal attributes.
-
 As we mentioned earlier we have 81 attribute and each attribute holds either numerical or categorical information. The following table-2.1 provides a clear idea on all the information and their description.
 
 \begin{longtable}{|p{3cm}|p{3cm}|p{6.6cm}|}
@@ -70,24 +69,19 @@ SaleCondition & object  & Condition of sale \\ \hline
 %\end{tabular}
 \end{longtable}
 
-% \section{Explore Data}
+\section{Explore Data}
 
-% \subsection{Data Exploration Report}
+\subsection{Data Exploration Report}
 % Describe results of data exploration
 % Include graphs and plots to indicate data characteristics
 
-% During this stage you’ll address data mining questions using querying, data visualization and reporting techniques. These may include:
-
-%    Distribution of key attributes (for example, the target attribute of a prediction task)
-%    Relationships between pairs or small numbers of attributes
-%    Results of simple aggregations
-%    Properties of significant sub-populations
-%    Simple statistical analyses
-
-% These analyses may directly address your data mining goals. They may also contribute to or refine the data description and quality reports, and feed into the transformation and other data preparation steps needed for further analysis. 
-
-%    Data exploration report – Describe results of your data exploration, including first findings or initial hypothesis and their impact on the remainder of the project. If appropriate you could include graphs and plots here to indicate data characteristics that suggest further examination of interesting data subsets.
-
+To further explore the data, we conducted the following analyses:
+\begin{itemize}
+    \item \textbf{Descriptive Statistics:} We computed summary statistics for the numerical variables in the dataset, including measures such as mean, median, standard deviation, minimum, and maximum. This helped us gain insights into the central tendency, spread, and range of each variable.
+    \item \textbf{Correlation Analysis:} We examined the correlation between the numerical variables and the target variable, "SalePrice." By calculating the correlation coefficients, we identified variables that had a strong positive or negative correlation with the target variable. This analysis helped us understand which features are most influential in determining house sale prices. In our case, some feature for example overall Quality, garage area, basement area has relatively high effect on target category.
+    \item \textbf{Feature Distribution:} We visualized the distribution of numerical variables using histograms and box plots. This allowed us to identify potential outliers and skewed distributions that may require further investigation and data preprocessing. 
+    \item \textbf{Categorical Variables:} We explored the categorical variables by examining the frequency distribution of each category. This helped us understand the distribution of different categorical features and their potential impact on house sale prices. We found that, prices rises as the garage area gets larger, also recently built houses has more value and so on. 
+\end{itemize}
 
 \section{Verify Data Quality}
 
