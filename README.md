@@ -9,7 +9,7 @@
   - [x] Neural Network and Evaluation
   - [x] Adaboost and Evaluation
   - [ ] Decision Trees
-  - [ ] Naive Bayes
+  - [x] Naive Bayes
   - [ ] K-means
   - [ ] Association Rules
   - [ ] Linear Regression
