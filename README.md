@@ -11,4 +11,4 @@
   - [x] Decision Trees
   - [x] Naive Bayes
 
-** Finished **
+**Finished**
