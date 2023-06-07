@@ -8,8 +8,7 @@
   - [x] Random Forest and Evaluation 
   - [x] Neural Network and Evaluation
   - [x] Adaboost and Evaluation
-  - [ ] Decision Trees
+  - [x] Decision Trees
   - [x] Naive Bayes
-  - [ ] K-means
-  - [ ] Association Rules
-  - [ ] Linear Regression
+
+** Finished **

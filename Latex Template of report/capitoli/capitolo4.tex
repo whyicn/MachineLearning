@@ -40,7 +40,7 @@ Generating a test design is an important step in evaluating the performance of m
 
 
 We used the sklearn.ensemble library for the Random Forest Tree model. We also employed 5-fold cross-validation to train the model. Finally, we saved the best model out of five and used it for evaluation.
-We evaluated the model using different criteria and plotted the Confusion Matrix on Figure \ref{cmRFT}. The table \ref{tableRFT} shows the scores for each criterion.
+We evaluated the model using different criteria and plotted the Confusion Matrix on Figure~\ref{cmRFT}. The table~\ref{tableRFT} shows the scores for each criterion.
   
 
 \begin{table}[H]  \centering  
@@ -62,7 +62,7 @@ We evaluated the model using different criteria and plotted the Confusion Matrix
 
 
 \begin{figure}[H]
-    \includegraphics[scale=0.7]{imgs/rft_cm.png}
+    \includegraphics[scale=0.7]{imgs/rft_cm}
     \centering
     \caption{Confusion Matrix of Random Forest Tree}
     \label{cmRFT}
@@ -72,7 +72,7 @@ We evaluated the model using different criteria and plotted the Confusion Matrix
 \subsection{Neural Network}
 
 As for Neural Network, We choose the library of MLPClassifier which is part of the Scikit-learn library in Python , The MLPClassifier is a neural network algorithm used for classification tasks. Some parameters are used in this model. The hidden\_layer\_sizes parameter specifies the number of neurons in each layer of the neural network. In this case, there are two hidden layers with 5 neurons each. The activation parameter specifies the activation function used in each neuron. In this case, the ReLU activation function is used. The random\_state parameter is used to initialize the random number generator for reproducibility. The alpha parameter is used for regularization to prevent overfitting. The max\_iter parameter specifies the maximum number of iterations for the solver to converge. The solver parameter specifies the optimization algorithm used to minimize the loss function. In this case, the stochastic gradient descent (SGD) algorithm is used. The tol parameter specifies the tolerance for stopping criteria. The learning\_rate\_init parameter specifies the initial learning rate used by the optimizer 1. 
-Here also plot the confusion Matrix \ref*{cmNN} and the result of evaluated table \ref*{tableNN}.
+Here also plot the confusion Matrix~\ref*{cmNN} and the result of evaluated table~\ref*{tableNN}.
 
 
 \begin{table}[H]\centering
@@ -93,7 +93,7 @@ Here also plot the confusion Matrix \ref*{cmNN} and the result of evaluated tabl
 \end{table}
 
 \begin{figure}[H]
-    \includegraphics[scale=0.7]{imgs/nn_cm.png}
+    \includegraphics[scale=0.7]{imgs/nn_cm}
     \centering
     \caption{Confusion Matrix of Neural Network}
     \label{cmNN}
@@ -102,7 +102,7 @@ Here also plot the confusion Matrix \ref*{cmNN} and the result of evaluated tabl
 \subsection{AdaBoost}
 
 For the AdaBoostClassifier, it is an ensemble learning method that combines multiple weak learners to create a strong classifier. The n\_estimators parameter specifies the number of weak learners to train iteratively. The learning\_rate parameter contributes to the weights of weak learners and uses 1 as a default value.
-The Confusion Matrix shows at \ref*{cmadb} and the evaluation table shows at \ref*{tableADB}.
+The Confusion Matrix shows at~\ref*{cmadb} and the evaluation table shows at~\ref*{tableADB}.
 
 \begin{table}[H]\centering
     \begin{tabular}{@{}lllll@{}}
@@ -122,7 +122,7 @@ The Confusion Matrix shows at \ref*{cmadb} and the evaluation table shows at \re
     \end{table}
 
     \begin{figure}[H]
-        \includegraphics[scale=0.7]{imgs/adb_cm.png}
+        \includegraphics[scale=0.7]{imgs/adb_cm}
         \centering
         \caption{Confusion Matrix of Adaboost}
         \label{cmadb}
@@ -135,7 +135,7 @@ The project also uses the Gaussian Naive Bayes algorithm to train a model on the
 
 The GaussianNB() function from the sklearn.naive\_bayes module is used to create an instance of the Gaussian Naive Bayes algorithm. The instance is then trained on the training data using the fit() method.
 
-the result of Confusion Matrix\ref*{cmnb} and evaluation table \ref*{tablenb} list here.
+the result of Confusion Matrix~\ref*{cmnb} and evaluation table~\ref*{tablenb} list here.
 
 
 \begin{table}[H]\centering
@@ -159,7 +159,7 @@ the result of Confusion Matrix\ref*{cmnb} and evaluation table \ref*{tablenb} li
 
 
 \begin{figure}[H]
-    \includegraphics[scale=0.7]{imgs/nb_cm.png}
+    \includegraphics[scale=0.7]{imgs/nb_cm}
     \centering
     \caption{Confusion Matrix of Naive Bayes}
     \label{cmnb}
@@ -168,7 +168,7 @@ the result of Confusion Matrix\ref*{cmnb} and evaluation table \ref*{tablenb} li
 \subsection{Decision Tree} 
 
 The DecisionTreeClassifier is a class in the sklearn.tree module of the Python Scikit-learn library. It is used to create a decision tree classifier which is a predictive model that can be used for both classification and regression problems. The criterion parameter specifies the function to measure the quality of a split. In this case, we use the supported criteria is “gini” for the Gini impurity.
-Confusion Matrix \ref{cmdt} and Classification Report of Decision Tree \ref{tabledt}.
+Confusion Matrix~\ref{cmdt} and Classification Report of Decision Tree~\ref{tabledt}.
 \begin{table}[H]\centering
     \begin{tabular}{@{}lllll@{}}
     \toprule
@@ -187,7 +187,7 @@ Confusion Matrix \ref{cmdt} and Classification Report of Decision Tree \ref{tabl
     \end{table}
 
     \begin{figure}[H]
-        \includegraphics[scale=0.7]{imgs/nb_cm.png}
+        \includegraphics[scale=0.7]{imgs/nb_cm}
         \centering
         \caption{Confusion Matrix of Decision Tree}
         \label{cmdt}
